@@ -36,7 +36,7 @@ class Queue:
         
     def dequeue(self):
         if self.A.isEmpty() and self.B.isEmpty():
-            print("둘 다 비었어")
+            print("EMPTY")
         
         elif not self.B.isEmpty():
             print("디큐 ", self.B.pop())
