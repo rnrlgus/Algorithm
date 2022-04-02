@@ -30,11 +30,6 @@ def solution(L, n, k, S):
             start = mid + 1
     print(start-1)
 
-
 # main
 # L, n, k = map(int, input().split())
 # S = list(map(int, input().split()))
-
-L, n, k = 12, 4, 1
-S = [2,4,5,8]
-solution(L, n, k, S)
