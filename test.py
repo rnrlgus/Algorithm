@@ -1,2 +1,3 @@
-l = [1]
-print(l[-1])
+u_list = [0] * 60001
+
+print(len(u_list))
