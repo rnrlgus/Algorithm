@@ -2,9 +2,6 @@ import sys
 from heapq import heappush, heappop
 
 def dijkstra():
-    #visited[0]=True
-    
-    
     heappush(heap, [0, 0])
     
     while heap:    
@@ -15,11 +12,14 @@ def dijkstra():
         visited[curr] = True
         
         for i, c in graph[curr]:
+            if visited[i]:
+                continue
             w = cost + c
             if w < distance[i][1]:
                 distance[i][1] = w
                 distance[i].sort()
                 heappush(heap, [w,i])
+
     
 
 #main
@@ -38,3 +38,6 @@ heap = []
 dijkstra()
 
 print(distance)
+
+print("------------------")
+print(graph)
