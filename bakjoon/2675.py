@@ -4,3 +4,4 @@ for i in range(n):
     for i in s:
         for _ in range(int(r)):
             print(i, end="")
+    print()
