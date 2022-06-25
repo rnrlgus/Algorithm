@@ -1,10 +1,7 @@
+def trif(n, k):
+    if n <= k:
+        return n
+    print(n)    
+    return trif(n - 1, k) + trif(n - 2, k) + trif(n - 3, k)
 
-a = [1, 2, 3, 1, 1, 4, 2, 4, 3, 3]
-b = [2, 3, 1, 1, 4]
-
-aa = "".join(str(s) for s in a)
-bb = "".join(str(s) for s in b)
-print(aa, bb)
-
-aa.replace(bb, "")
-print(aa)
+print(trif(8, 4))
