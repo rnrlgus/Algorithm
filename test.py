@@ -1,7 +1,20 @@
-def trif(n, k):
-    if n <= k:
-        return n
-    print(n)    
-    return trif(n - 1, k) + trif(n - 2, k) + trif(n - 3, k)
+a = input()
+b = input()
+a = list(a)
+b = list(b)
+a.sort()
+b.sort()
+"".join(a)
+"".join(b)
 
-print(trif(8, 4))
+result = True
+for i, j in zip(a, b):
+    print(i, j)
+    if i != j:
+        result = False
+if result == True:
+    print("Yes")
+else:
+    print("No")
+
+a.remo
