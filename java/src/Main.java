@@ -2,29 +2,23 @@ import java.util.Scanner;
 
 public class Main {
 
-    public int solution(String str, char c) {
-        int answer = 0;
+    public String solution(String str) {
+        String answer = "";
+        int min = Integer.MIN_VALUE;
 
-        str = str.toUpperCase();
-        c = Character.toUpperCase(c);
-
-        for (int i = 0; i < str.length(); ++i) {
-            if (str.charAt(i) == c) {
-                answer += 1;
-            }
-        }
 
         return answer;
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        Main main = new Main();
         Scanner scan = new Scanner((System.in));
-        String str = scan.next();
-        char c = scan.next().charAt(0);
+        int num = scan.nextInt();
 
+        for (int i = 0; i < num; ++i) {
+            System.out.println(main.solution(scan.next()));
+        }
 
-        System.out.println(T.solution(str, c));
 
     }
 }
