@@ -1,6 +1,8 @@
+package string;
+
 import java.util.Scanner;
 
-public class Main {
+public class Reverse {
 
     public String solution(String str) {
         String answer = "";
@@ -13,7 +15,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Reverse main = new Reverse();
         Scanner scan = new Scanner((System.in));
         int n = scan.nextInt();
 
