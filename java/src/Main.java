@@ -3,11 +3,25 @@ import java.util.Scanner;
 public class Main {
 
     public String solution(String str) {
-        String answer = "";
-        for (int i = str.length() - 1; i >= 0; --i) {
-            answer += str.charAt(i);
-        }
+        String answer;
+        char[] s = str.toCharArray();
+        int left = 0;
+        int right = str.length() - 1;
 
+        while (left < right) {
+            if (!Character.isAlphabetic(s[left])) {
+                left ++;
+            } else if (!Character.isAlphabetic(s[right])) {
+                right--;
+            } else {
+                char tmp = s[left];
+                s[left] = s[right];
+                s[right] = tmp;
+                left++;
+                right--;
+            }
+        }
+        answer = String.valueOf(s);
 
         return answer;
     }
@@ -15,12 +29,9 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
         Scanner scan = new Scanner((System.in));
-        int n = scan.nextInt();
+        String str = scan.next();
 
-        for (int i = 0; i < n; ++i) {
-            System.out.println(main.solution(scan.next()));
-        }
-
+        System.out.println(main.solution(str));
 
     }
 }
