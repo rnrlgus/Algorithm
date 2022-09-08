@@ -1,7 +1,9 @@
+package array;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class Fibonacci {
 
     public ArrayList<Integer> solution(int n) {
         ArrayList<Integer> answer = new ArrayList<>();
@@ -18,7 +20,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Fibonacci main = new Fibonacci();
         Scanner scan = new Scanner((System.in));
         int n = scan.nextInt();
         ArrayList<Integer> result = main.solution(n);
