@@ -1,7 +1,8 @@
-import java.util.ArrayList;
+package array;
+
 import java.util.Scanner;
 
-public class Main {
+public class PrimeNums_Eratostenes {
 
     public int solution(int n) {
         int answer = 0;
@@ -18,7 +19,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        PrimeNums_Eratostenes main = new PrimeNums_Eratostenes();
         Scanner scan = new Scanner((System.in));
         int n = scan.nextInt();
 
