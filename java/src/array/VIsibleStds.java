@@ -1,7 +1,8 @@
-import java.util.ArrayList;
+package array;
+
 import java.util.Scanner;
 
-public class Main {
+public class VIsibleStds {
 
     public int solution(int[] arr, int n) {
         int answer = 1; // 맨앞놈 포함
@@ -17,7 +18,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        VIsibleStds main = new VIsibleStds();
         Scanner scan = new Scanner((System.in));
         int n = scan.nextInt();
         int[] arr = new int[n];
