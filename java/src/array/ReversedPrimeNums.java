@@ -1,7 +1,9 @@
+package array;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class ReversedPrimeNums {
 
     public ArrayList<Integer> solution(int n, int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();
@@ -42,7 +44,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        ReversedPrimeNums main = new ReversedPrimeNums();
         Scanner scan = new Scanner((System.in));
         int n = scan.nextInt();
         int[] arr = new int[n];
