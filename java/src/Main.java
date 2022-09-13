@@ -3,42 +3,19 @@ import java.util.Scanner;
 
 public class Main {
 
-    public ArrayList<Integer> solution(int n, int[] arr) {
-        ArrayList<Integer> answer = new ArrayList<>();
+    public int solution(int n, int[] arr) {
+        int answer = 0;
+        int cnt = 0;
         for (int i = 0; i < n; ++i) {
-            int asd = reverse(arr[i]);
-            if (isPrime(asd)) {
-                answer.add(asd);
+            if (arr[i] == 0) {
+                cnt = 0;
+            } else {
+                cnt += 1;
+                answer += cnt;
             }
-
-
         }
 
         return answer;
-    }
-
-    private int reverse(int arr) {
-        String tmp = String.valueOf(arr);
-        StringBuilder sb = new StringBuilder(tmp);
-        sb = sb.reverse();
-        String ttmp = sb.toString();
-        int asd = Integer.parseInt(ttmp);
-        return asd;
-    }
-
-    public boolean isPrime(int n) {
-        int cnt = 0;
-        for (int i = 1; i < n+1; ++i) {
-            if (n % i == 0) {
-                cnt += 1;
-            }
-        }
-
-        if (cnt == 2) {
-            return true;
-        } else {
-            return false;
-        }
     }
 
     public static void main(String[] args) {
@@ -51,9 +28,6 @@ public class Main {
             arr[i] = scan.nextInt();
         }
 
-        ArrayList<Integer> result = main.solution(n, arr);
-        for (Integer x : result) {
-            System.out.print(x + " ");
-        }
+        System.out.println(main.solution(n, arr));
     }
 }
