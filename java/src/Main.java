@@ -1,17 +1,17 @@
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
-    public int solution(int n, int[] arr) {
-        int answer = 0;
-        int cnt = 0;
+    public int[] solution(int n, int[] arr) {
+        int[] answer = new int[n];
         for (int i = 0; i < n; ++i) {
-            if (arr[i] == 0) {
-                cnt = 0;
-            } else {
-                cnt += 1;
-                answer += cnt;
+            int cnt = 1;
+            for (int j = 0; j < n; j++) {
+                if (arr[j] > arr[i]) {
+                    cnt += 1;
+                }
+                answer[i] = cnt;
             }
         }
 
@@ -28,6 +28,9 @@ public class Main {
             arr[i] = scan.nextInt();
         }
 
-        System.out.println(main.solution(n, arr));
+        int[] result = main.solution(n, arr);
+        for (int x : result) {
+            System.out.print(x + " ");
+        }
     }
 }
