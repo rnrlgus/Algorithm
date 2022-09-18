@@ -1,7 +1,9 @@
+package twoPointer_slidingWindow;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class sumArray {
 
     public ArrayList<Integer> solution(int n, int m, int[] arr1, int[] arr2) {
         ArrayList<Integer> answer = new ArrayList<>();
@@ -18,7 +20,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        sumArray main = new sumArray();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
