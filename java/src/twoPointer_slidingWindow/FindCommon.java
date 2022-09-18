@@ -1,8 +1,10 @@
+package twoPointer_slidingWindow;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class FindCommon {
 
     public ArrayList<Integer> solution(int n, int m, int[] arr1, int[] arr2) {
         ArrayList<Integer> answer = new ArrayList<>();
@@ -23,7 +25,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        FindCommon main = new FindCommon();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
