@@ -1,8 +1,8 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+package twoPointer_slidingWindow;
+
 import java.util.Scanner;
 
-public class Main {
+public class Top3 {
 
     public int solution(int n, int k, int[] arr) {
         int answer=0;
@@ -23,7 +23,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Top3 main = new Top3();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
