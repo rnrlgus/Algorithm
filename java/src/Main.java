@@ -5,13 +5,25 @@ public class Main {
     public int solution(int n, int k, int[] arr) {
         int answer=0, sum=0, start=0;
 
+//        for (int end = 0; end < n; ++end) {
+//            sum += arr[end];
+//            if (sum == k) answer += 1;
+//            while (sum >= k) {
+//                sum -= arr[start++];
+//                if (sum == k) answer++;
+//            }
+//        }
+
         for (int end = 0; end < n; ++end) {
             sum += arr[end];
-            if (sum == k) answer += 1;
-            while (sum >= k) {
+
+            while (sum > k) {
+//                sum -= arr[start];
+//                start += 1;
                 sum -= arr[start++];
-                if (sum == k) answer++;
             }
+
+            if (sum == k) answer += 1;
         }
 
 
