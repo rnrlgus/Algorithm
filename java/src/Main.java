@@ -2,25 +2,17 @@ import java.util.Scanner;
 
 public class Main {
 
-    public int solution(int n) {
-        int answer = 0;
-        int start = 0, sum = 0;
-        int m = n / 2 + 1;
-        int[] arr = new int[m];
-        for (int i = 0; i < m; ++i) {
-            arr[i] = i + 1;
-        }
-
-        for (int end = 0; end < m; ++end) {
-            sum += arr[end];
-
-            while (sum > n) {
-                sum -= arr[start++];
+    public int solution(int n,int k,int[] arr) {
+        int answer = 0, cnt = 0, start = 0;
+        for (int end = 0; end < n; ++end) {
+            if(arr[end] == 0) cnt++;
+            while (cnt > k) {
+                if (arr[start]==0) cnt--;
+                start++;
             }
-
-            if (sum == n) answer++;
-
+            answer = Math.max(answer, end - start + 1);
         }
+
 
 
         return answer;
@@ -31,7 +23,13 @@ public class Main {
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
+        int k = scan.nextInt();
 
-        System.out.println(main.solution(n));
+        int[] arr = new int[n];
+        for (int i = 0; i < n; ++i) {
+            arr[i] = scan.nextInt();
+        }
+
+        System.out.println(main.solution(n, k, arr));
     }
 }
