@@ -1,6 +1,8 @@
+package twoPointer_slidingWindow;
+
 import java.util.Scanner;
 
-public class Main {
+public class SumNums {
 
     public int solution(int n) {
         int answer = 0;
@@ -27,7 +29,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        SumNums main = new SumNums();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
