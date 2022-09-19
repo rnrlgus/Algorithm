@@ -1,6 +1,8 @@
+package twoPointer_slidingWindow;
+
 import java.util.Scanner;
 
-public class Main {
+public class SubSequences {
 
     public int solution(int n, int k, int[] arr) {
         int answer=0, sum=0, start=0;
@@ -19,7 +21,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        SubSequences main = new SubSequences();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
