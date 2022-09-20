@@ -1,8 +1,10 @@
+package haspMap_TreeSet;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Main {
+public class Hash_SlidingWindow {
 
     public ArrayList<Integer> solution(int n, int k, int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();
@@ -28,7 +30,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Hash_SlidingWindow main = new Hash_SlidingWindow();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
