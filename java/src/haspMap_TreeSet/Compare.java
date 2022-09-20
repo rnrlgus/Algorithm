@@ -1,7 +1,9 @@
+package haspMap_TreeSet;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Main {
+public class Compare {
 
     public String solution(String str1, String str2) {
         String answer = "YES";
@@ -21,7 +23,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Compare main = new Compare();
         Scanner scan = new Scanner((System.in));
 
         String str1= scan.next();
