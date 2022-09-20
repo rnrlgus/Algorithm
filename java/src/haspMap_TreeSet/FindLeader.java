@@ -1,7 +1,9 @@
+package haspMap_TreeSet;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Main {
+public class FindLeader {
 
     public char solution(int n, String str) {
         int max = Integer.MIN_VALUE;
@@ -26,7 +28,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        FindLeader main = new FindLeader();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
