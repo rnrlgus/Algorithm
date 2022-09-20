@@ -1,7 +1,9 @@
+package haspMap_TreeSet;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Main {
+public class FindAllAnagrams {
 
     public int solution(String str1, String str2) {
         int answer = 0;
@@ -27,7 +29,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        FindAllAnagrams main = new FindAllAnagrams();
         Scanner scan = new Scanner((System.in));
 
         String str1 = scan.next();
