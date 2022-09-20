@@ -1,9 +1,10 @@
+package haspMap_TreeSet;
+
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-public class Main {
+public class KthNum {
 
     public int solution(int n, int k, int[] arr) {
         int answer = -1;
@@ -26,7 +27,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        KthNum main = new KthNum();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
