@@ -1,6 +1,9 @@
-import java.util.*;
+package stack_queue;
 
-public class Main {
+import java.util.Scanner;
+import java.util.Stack;
+
+public class IsProperBraket {
 
     public String solution(String str) {
         String answer = "YES";
@@ -20,7 +23,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        IsProperBraket main = new IsProperBraket();
         Scanner scan = new Scanner((System.in));
 
         String str = scan.next();
