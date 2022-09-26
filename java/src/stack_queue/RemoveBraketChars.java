@@ -1,6 +1,9 @@
-import java.util.*;
+package stack_queue;
 
-public class Main {
+import java.util.Scanner;
+import java.util.Stack;
+
+public class RemoveBraketChars {
 
     public String solution(String str) {
         String answer = "";
@@ -17,7 +20,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        RemoveBraketChars main = new RemoveBraketChars();
         Scanner scan = new Scanner((System.in));
 
         String str = scan.next();
