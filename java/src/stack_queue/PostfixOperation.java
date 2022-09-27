@@ -1,6 +1,9 @@
-import java.util.*;
+package stack_queue;
 
-public class Main {
+import java.util.Scanner;
+import java.util.Stack;
+
+public class PostfixOperation {
 
     public int solution(String str) {
         int answer = 0;
@@ -23,12 +26,12 @@ public class Main {
             }
         }
         answer = stack.peek();
-
+        
         return answer;
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        PostfixOperation main = new PostfixOperation();
         Scanner scan = new Scanner((System.in));
 
         String str = scan.next();
