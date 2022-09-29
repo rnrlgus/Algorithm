@@ -1,6 +1,9 @@
-import java.util.*;
+package stack_queue;
 
-public class Main {
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Pipe {
 
     public int solution(String str) {
         int answer = 0;
@@ -23,7 +26,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Pipe main = new Pipe();
         Scanner scan = new Scanner((System.in));
 
         String str = scan.next();
