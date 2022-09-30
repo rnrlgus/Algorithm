@@ -1,6 +1,10 @@
-import java.util.*;
+package stack_queue;
 
-public class Main {
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class Curriculum {
 
     public String solution(String str1, String str2) {
         String answer = "YES";
@@ -18,7 +22,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Curriculum main = new Curriculum();
         Scanner scan = new Scanner((System.in));
 
         String str1 = scan.next();
