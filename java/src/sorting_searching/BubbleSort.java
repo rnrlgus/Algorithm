@@ -1,7 +1,9 @@
-import java.util.*;
+package sorting_searching;
+
+import java.util.Scanner;
 
 
-public class Main  {
+public class BubbleSort {
 
     public int[] solution(int n, int[] arr) {
         for (int i = 0; i < n-1; ++i) {
@@ -19,7 +21,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        BubbleSort main = new BubbleSort();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
