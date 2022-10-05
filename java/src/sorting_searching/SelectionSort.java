@@ -1,7 +1,9 @@
-import java.util.*;
+package sorting_searching;
+
+import java.util.Scanner;
 
 
-public class Main  {
+public class SelectionSort {
 
     public int[] solution(int n, int[] arr) {
         for (int i = 0; i < n; ++i) {
@@ -20,7 +22,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        SelectionSort main = new SelectionSort();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
