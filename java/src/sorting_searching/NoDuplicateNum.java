@@ -1,8 +1,11 @@
-import java.util.*;
+package sorting_searching;
+
+import java.util.Arrays;
+import java.util.Scanner;
 
 
-public class Main  {
-
+public class NoDuplicateNum {
+    
     public String solution(int n, int[] arr) {
         String answer = "U";
         Arrays.sort(arr);
@@ -16,7 +19,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        NoDuplicateNum main = new NoDuplicateNum();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
