@@ -1,4 +1,8 @@
-import java.util.*;
+package sorting_searching;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
 
 class Point implements Comparable<Point> {
     public int x, y;
@@ -14,7 +18,7 @@ class Point implements Comparable<Point> {
     }
 
 }
-public class Main  {
+public class CoordinateSorting  {
 
 //    public ArrayList<Integer> solution(int n, int[] arr) {
 //        ArrayList<Integer> answer = new ArrayList<>();
@@ -25,7 +29,7 @@ public class Main  {
 //    }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        CoordinateSorting main = new CoordinateSorting();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
