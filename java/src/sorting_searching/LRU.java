@@ -1,7 +1,9 @@
-import java.util.*;
+package sorting_searching;
+
+import java.util.Scanner;
 
 
-public class Main  {
+public class LRU {
 
 //    5 9
 //    1 2 3 2 6 2 3 5 7
@@ -34,7 +36,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        LRU main = new LRU();
         Scanner scan = new Scanner((System.in));
 
         int s = scan.nextInt();
