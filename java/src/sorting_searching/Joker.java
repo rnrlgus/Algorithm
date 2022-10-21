@@ -1,7 +1,11 @@
-import java.util.*;
+package sorting_searching;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
 
-public class Main  {
+public class Joker {
 
     public ArrayList<Integer> solution(int n, int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();
@@ -16,7 +20,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Joker main = new Joker();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
