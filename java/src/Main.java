@@ -1,11 +1,14 @@
 import java.util.*;
 
 public class Main  {
+
+    static int[] fibo;
     public int solution(int n) {
-        if (n == 1) {
-            return 1;
+        if (fibo[n] > 0) return fibo[n];
+        if (n == 1 || n == 2) {
+            return fibo[n] = 1;
         } else {
-            return n * solution(n-1);
+            return fibo[n] = solution(n-1) + solution(n-2);
         }
     }
 
@@ -14,8 +17,8 @@ public class Main  {
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
-
+        fibo = new int[n+1];
         System.out.println(main.solution(n));
-
+        System.out.println(fibo[n]);
     }
 }
