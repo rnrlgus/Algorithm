@@ -1,6 +1,8 @@
-import java.util.*;
+package sorting_searching;
 
-public class Main  {
+import java.util.Scanner;
+
+public class MusicVideo {
     public int solution(int n, int m, int[] arr) {
         int answer = 0;
         int start = arr[n - 1];
@@ -36,7 +38,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        MusicVideo main = new MusicVideo();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
