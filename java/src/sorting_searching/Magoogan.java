@@ -1,6 +1,9 @@
-import java.util.*;
+package sorting_searching;
 
-public class Main  {
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Magoogan {
     public int solution(int n, int m, int[] arr) {
         Arrays.sort(arr);
         int answer = 0;
@@ -31,7 +34,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Magoogan main = new Magoogan();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
