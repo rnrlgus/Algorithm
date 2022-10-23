@@ -1,6 +1,9 @@
-import java.util.*;
+package sorting_searching;
 
-public class Main  {
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class BinarySearch {
 
     public int solution(int n, int m, int[] arr) {
         Arrays.sort(arr);
@@ -26,7 +29,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        BinarySearch main = new BinarySearch();
         Scanner scan = new Scanner((System.in));
 
         int n = scan.nextInt();
