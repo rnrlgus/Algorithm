@@ -1,4 +1,4 @@
-import java.util.*;
+package dfs;
 
 class Node {
     int data;
@@ -10,7 +10,7 @@ class Node {
 
     }
 }
-public class Main  {
+public class BinarySearchTreeDFS  {
 
     Node root;
     public void DFS(Node root) {
@@ -22,13 +22,13 @@ public class Main  {
 //            System.out.print(root.data + " "); 중위 순회
             DFS(root.rt);
 //            System.out.print(root.data + " "); 후위 순회
-
+                    
         }
 
     }
 
     public static void main(String[] args) {
-        Main tree = new Main();
+        BinarySearchTreeDFS tree = new BinarySearchTreeDFS();
         tree.root = new Node(1);
         tree.root.lt = new Node(2);
         tree.root.rt = new Node(3);
