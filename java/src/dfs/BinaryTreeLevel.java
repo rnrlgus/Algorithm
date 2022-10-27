@@ -1,16 +1,11 @@
-import java.util.*;
+package dfs;
 
-class Node {
-    int data;
-    Node lt, rt;
+import java.util.LinkedList;
+import java.util.Queue;
 
-    public Node(int val) {
-        data = val;
-        lt =  rt = null;
-    }
-}
 
-public class Main  {
+
+public class BinaryTreeLevel  {
 
     Node root;
     public void BFS(Node root) {
@@ -37,7 +32,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main tree = new Main();
+        BinaryTreeLevel tree = new BinaryTreeLevel();
 
 
         tree.root = new Node(1);

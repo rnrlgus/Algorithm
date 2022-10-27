@@ -1,15 +1,5 @@
 package dfs;
 
-class Node {
-    int data;
-    Node lt, rt;
-
-    public Node(int val) {
-        data = val;
-        lt =  rt = null;
-
-    }
-}
 public class BinarySearchTraversalDFS  {
 
     Node root;
@@ -17,7 +7,7 @@ public class BinarySearchTraversalDFS  {
         if (root == null) {
             return ;
         } else {
-//            System.out.print(root.data + " "); 전위 순회
+            System.out.print(root.data + " ");
             DFS(root.lt);
 //            System.out.print(root.data + " "); 중위 순회
             DFS(root.rt);
