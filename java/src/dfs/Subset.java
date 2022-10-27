@@ -1,6 +1,6 @@
-import java.util.*;
+package dfs;
 
-public class Main  {
+public class Subset {
 
     static int n;
     static int[] check;
@@ -28,7 +28,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Subset main = new Subset();
 
         n = 3;
         check = new int[n + 1];
