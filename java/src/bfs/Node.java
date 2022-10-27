@@ -1,6 +1,6 @@
-package dfs;
+package bfs;
 
-public class Node {
+class Node {
     int data;
     Node lt, rt;
 

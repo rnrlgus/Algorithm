@@ -1,6 +1,10 @@
-import java.util.*;
+package bfs;
 
-public class Main  {
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class FindCow_1 {
 
     int answer = 0;
     int[] dis = {1, -1, 5};
@@ -31,7 +35,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        FindCow_1 main = new FindCow_1();
         Scanner scan = new Scanner(System.in);
 
         int a = scan.nextInt();
