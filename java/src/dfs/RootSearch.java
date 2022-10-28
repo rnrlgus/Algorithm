@@ -1,7 +1,8 @@
+package dfs;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class Main  {
+public class RootSearch {
 
     static int n, m, answer = 0;
     static int[][]graph;
@@ -22,7 +23,7 @@ public class Main  {
      }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        RootSearch main = new RootSearch();
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt();
