@@ -1,7 +1,6 @@
+package dfs;
 
-import java.util.*;
-
-public class Main  {
+public class ShortestToEnd {
 
     Node root;
 
@@ -9,12 +8,12 @@ public class Main  {
         if (root.lt == null && root.rt == null) {
             return L;
         } else {
-            return Math.min(DFS(L + 1, root.lt), DFS(L + 1, root.rt));
+            return Math.min(DFS(L + 1, root.lt), DFS(L + 1, root.rt)); 
         }
     }
 
     public static void main(String[] args) {
-        Main tree = new Main();
+        ShortestToEnd tree = new ShortestToEnd();
         tree.root = new Node(1);
         tree.root.lt = new Node(2);
         tree.root.rt = new Node(3);
