@@ -1,7 +1,9 @@
+package bfs;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
-public class Main  {
+public class ShortestToEndBFS {
 
     Node root;
 
@@ -26,7 +28,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main tree = new Main();
+        ShortestToEndBFS tree = new ShortestToEndBFS();
         tree.root = new Node(1);
         tree.root.lt = new Node(2);
         tree.root.rt = new Node(3);
