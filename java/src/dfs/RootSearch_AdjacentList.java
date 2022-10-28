@@ -1,7 +1,9 @@
+package dfs;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Main  {
+public class RootSearch_AdjacentList {
 
     static int n, m, answer = 0;
     static ArrayList<ArrayList<Integer>> graph;
@@ -23,7 +25,7 @@ public class Main  {
      }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        RootSearch_AdjacentList main = new RootSearch_AdjacentList();
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt();
