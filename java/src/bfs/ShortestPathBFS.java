@@ -1,7 +1,11 @@
+package bfs;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
-public class Main  {
+public class ShortestPathBFS {
 
     static int n, m;
     static ArrayList<ArrayList<Integer>> graph;
@@ -27,7 +31,7 @@ public class Main  {
      }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        ShortestPathBFS main = new ShortestPathBFS();
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt();
