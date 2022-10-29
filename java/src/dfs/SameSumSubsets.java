@@ -1,7 +1,8 @@
+package dfs;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class Main  {
+public class SameSumSubsets {
 
     static int n;
     static int[] check;
@@ -37,7 +38,7 @@ public class Main  {
      }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        SameSumSubsets main = new SameSumSubsets();
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt();
