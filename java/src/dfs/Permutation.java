@@ -1,7 +1,8 @@
+package dfs;
 
 import java.util.Scanner;
 
-public class Main {
+public class Permutation {
 
     static int n, m;
     static int[] arr, check;
@@ -27,7 +28,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Permutation main = new Permutation();
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt();
