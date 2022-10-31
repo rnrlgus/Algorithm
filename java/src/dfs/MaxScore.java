@@ -1,7 +1,8 @@
+package dfs;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class Main  {
+public class MaxScore {
 
     static int n, m;
     static int[] arr1, arr2;
@@ -20,7 +21,7 @@ public class Main  {
      }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        MaxScore main = new MaxScore();
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt();
