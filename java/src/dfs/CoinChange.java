@@ -1,7 +1,10 @@
+package dfs;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
 
-public class Main  {
+public class CoinChange {
 
     static int n, change;
     static Integer[] coin;
@@ -20,7 +23,7 @@ public class Main  {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        CoinChange main = new CoinChange();
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt();
