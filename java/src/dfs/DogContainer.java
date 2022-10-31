@@ -1,7 +1,8 @@
+package dfs;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class Main  {
+public class DogContainer {
 
     static int c, n;
     static int[] arr;
@@ -22,7 +23,7 @@ public class Main  {
      }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        DogContainer main = new DogContainer();
         Scanner scan = new Scanner(System.in);
 
         c = scan.nextInt();
