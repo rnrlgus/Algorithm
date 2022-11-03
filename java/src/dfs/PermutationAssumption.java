@@ -1,7 +1,8 @@
+package dfs;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class Main {
+public class PermutationAssumption {
 
     boolean flag = false;
     static int n, f; // 1~n / final num
@@ -38,7 +39,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        PermutationAssumption main = new PermutationAssumption();
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt();
