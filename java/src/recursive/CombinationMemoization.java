@@ -1,7 +1,8 @@
+package recursive;
 
 import java.util.Scanner;
 
-public class Main {
+public class CombinationMemoization {
 
     static int[][] map;
 
@@ -11,7 +12,7 @@ public class Main {
         else return map[n][r] = combination(n - 1, r - 1) + combination(n - 1, r);
     }
     public static void main(String[] args) {
-        Main main = new Main();
+        CombinationMemoization main = new CombinationMemoization();
         Scanner scan = new Scanner(System.in);
 
         int n = scan.nextInt();
