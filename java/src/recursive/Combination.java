@@ -1,7 +1,8 @@
+package recursive;
 
 import java.util.Scanner;
 
-public class Main {
+public class Combination {
 
     int combination(int n, int r) {
         if (n == r) return 1;
@@ -11,7 +12,7 @@ public class Main {
         return combination(n - 1, r - 1) + combination(n - 1, r);
     }
     public static void main(String[] args) {
-        Main main = new Main();
+        Combination main = new Combination();
         Scanner scan = new Scanner(System.in);
 
         int n = scan.nextInt();
