@@ -1,7 +1,8 @@
+package dfs;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class Main {
+public class Combination {
 
     static int n, m;
     static int[] check;
@@ -26,7 +27,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Combination main = new Combination();
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt();
