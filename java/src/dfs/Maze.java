@@ -1,7 +1,8 @@
+package dfs;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class Main {
+public class Maze {
 
     static int cnt = 0;
     static int[][] map = new int[7][7];
@@ -32,7 +33,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Maze main = new Maze();
         Scanner scan = new Scanner(System.in);
 
         for (int i = 0; i < 7; ++i) {
