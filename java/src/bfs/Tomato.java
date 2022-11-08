@@ -1,8 +1,11 @@
+package bfs;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
 
-public class Main {
+public class Tomato {
 
     static int m, n;
     static int[][] map, distance;
@@ -48,7 +51,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Tomato main = new Tomato();
         Scanner scan = new Scanner(System.in);
 
         m = scan.nextInt();
