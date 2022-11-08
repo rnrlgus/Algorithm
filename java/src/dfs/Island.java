@@ -1,5 +1,8 @@
-import java.util.*;
-class Main {
+package dfs;
+
+import java.util.Scanner;
+
+class Island {
     static int answer=0, n;
     static int[] dx={-1, -1, 0, 1, 1, 1, 0, -1};
     static int[] dy={0, 1, 1, 1, 0, -1, -1, -1};
@@ -26,7 +29,7 @@ class Main {
     }
 
     public static void main(String[] args){
-        Main main = new Main();
+        Island main = new Island();
         Scanner kb = new Scanner(System.in);
         n=kb.nextInt();
         int[][] arr=new int[n][n];
