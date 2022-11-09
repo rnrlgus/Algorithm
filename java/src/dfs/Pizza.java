@@ -1,5 +1,9 @@
-import java.util.*;
-class Main {
+package dfs;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Pizza {
     static int n, m;
     static int answer = Integer.MAX_VALUE;
 
@@ -29,7 +33,7 @@ class Main {
     }
 
     public static void main(String[] args){
-        Main main = new Main();
+        Pizza main = new Pizza();
         Scanner scan = new Scanner(System.in);
         n = scan.nextInt();
         m = scan.nextInt();
