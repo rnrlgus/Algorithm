@@ -1,4 +1,8 @@
-import java.util.*;
+package greedy;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
 
 class Time implements Comparable<Time> {
     int time;
@@ -19,7 +23,7 @@ class Time implements Comparable<Time> {
 
 }
 
-public class Main {
+public class Wedding {
 
     int solution(ArrayList<Time> arr) {
         Collections.sort(arr);
@@ -37,7 +41,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Wedding main = new Wedding();
         Scanner scan = new Scanner(System.in);
 
         int n = scan.nextInt();
