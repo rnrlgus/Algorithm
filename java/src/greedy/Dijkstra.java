@@ -1,4 +1,9 @@
-import java.util.*;
+package greedy;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.Scanner;
 class Edge implements Comparable<Edge>{
     public int vex;
     public int cost;
@@ -12,7 +17,7 @@ class Edge implements Comparable<Edge>{
     }
 }
 
-class Main {
+class Dijkstra {
     static int n, m;
     static ArrayList<ArrayList<Edge>> graph;
     static int[] dis;
@@ -35,7 +40,7 @@ class Main {
     }
 
     public static void main(String[] args){
-        Main T = new Main();
+        Dijkstra T = new Dijkstra();
         Scanner kb = new Scanner(System.in);
         n=kb.nextInt();
         m=kb.nextInt();
