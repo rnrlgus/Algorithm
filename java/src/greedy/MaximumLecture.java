@@ -1,4 +1,9 @@
-import java.util.*;
+package greedy;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.PriorityQueue;
+import java.util.Scanner;
 
 class Lecture implements Comparable<Lecture> {
     int money;
@@ -18,7 +23,7 @@ class Lecture implements Comparable<Lecture> {
 
 }
 
-public class Main {
+public class MaximumLecture {
 
     static int max = Integer.MIN_VALUE;
     static int n;
@@ -41,7 +46,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        MaximumLecture main = new MaximumLecture();
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt();
