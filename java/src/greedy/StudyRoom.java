@@ -1,4 +1,8 @@
-import java.util.*;
+package greedy;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
 
 class Time implements Comparable<Time> {
     public int s, e;
@@ -16,7 +20,7 @@ class Time implements Comparable<Time> {
 
 }
 
-public class Main {
+public class StudyRoom {
 
     int solution(ArrayList<Time> arr, int n) {
         int cnt = 0;
@@ -35,7 +39,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        StudyRoom main = new StudyRoom();
         Scanner scan = new Scanner(System.in);
 
         int n = scan.nextInt();
