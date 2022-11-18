@@ -1,6 +1,8 @@
-import java.util.*;
+package dp;
 
-class Main {
+import java.util.Scanner;
+
+class LIS {
 
     static int[] dp;
 
@@ -21,7 +23,7 @@ class Main {
     }
 
     public static void main(String[] args){
-        Main main = new Main();
+        LIS main = new LIS();
         Scanner scan = new Scanner(System.in);
         int n=scan.nextInt();
 
