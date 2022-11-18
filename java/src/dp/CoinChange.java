@@ -1,6 +1,9 @@
-import java.util.*;
+package dp;
 
-class Main {
+import java.util.Arrays;
+import java.util.Scanner;
+
+class CoinChange {
     static int[] dp;
 
     public int solution(int n, int[] arr, int m){
@@ -16,7 +19,7 @@ class Main {
     }
 
     public static void main(String[] args){
-        Main main = new Main();
+        CoinChange main = new CoinChange();
         Scanner scan = new Scanner(System.in);
         int n=scan.nextInt();
 
