@@ -1,6 +1,8 @@
-import java.util.*;
+package dp;
 
-class Main {
+import java.util.Scanner;
+
+class Stair {
 
     static int[] dp;
 
@@ -16,7 +18,7 @@ class Main {
     }
 
     public static void main(String[] args){
-        Main main = new Main();
+        Stair main = new Stair();
         Scanner scan = new Scanner(System.in);
         int n=scan.nextInt();
 
